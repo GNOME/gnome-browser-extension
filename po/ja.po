@@ -1,8 +1,9 @@
 # Japanese translation for chrome-gnome-shell.
-# Copyright (C) 2019-2020 chrome-gnome-shell's COPYRIGHT HOLDER
+# Copyright (C) 2019-2021 chrome-gnome-shell's COPYRIGHT HOLDER
 # This file is distributed under the same license as the chrome-gnome-shell package.
 # sicklylife <translation@sicklylife.jp>, 2019-2020.
 # Kiyotaka Nishibori <ml.nishibori.kiyotaka@gmail.com>, 2019.
+# Yuki Okushi <huyuumi.dev@gmail.com>, 2020.
 #
 msgid ""
 msgstr ""
@@ -26,7 +27,7 @@ msgstr "閉じる"
 #. format.
 #: chrome-gnome-shell-key-error_connector_response:1
 msgid "Wrong connector response received"
-msgstr ""
+msgstr "コネクタからの不正な応答を受け取りました"
 
 #. Used as title, eg in table header. Means 'Does GNOME Shell extension
 #. enabled?'
@@ -65,7 +66,7 @@ msgstr "同期"
 #. titlebars.
 #: chrome-gnome-shell-key-gs_chrome:1
 msgid "GNOME Shell integration"
-msgstr ""
+msgstr "GNOME Shell integration"
 
 #. This is a part of phrase 'Update check period: xx hours'
 #: chrome-gnome-shell-key-hours:1
@@ -89,7 +90,7 @@ msgstr ""
 #.
 #: chrome-gnome-shell-key-native_request_failed:1
 msgid "«$REQUEST$» native request failed"
-msgstr ""
+msgstr "«$REQUEST$» ネイティブリクエストに失敗しました"
 
 #. This is a part of phrase 'Last check: never'
 #: chrome-gnome-shell-key-never:1
@@ -107,6 +108,8 @@ msgid ""
 "Unable to locate GNOME Shell settings or version. Make sure it is installed "
 "and running."
 msgstr ""
+"GNOME Shell の設定やバージョンを見つけられません。インストール、"
+"実行されていることを確認してください。"
 
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
@@ -205,6 +208,8 @@ msgid ""
 "Your native host connector does not support updates check for enabled GNOME "
 "Shell extensions only. Consider update."
 msgstr ""
+"ネイティブホストコネクタが有効化された GNOME Shell 拡張機能のみの更新確認"
+"に対応していません。アップデートを検討してください。"
 
 #: chrome-gnome-shell-key-options_update_check_notice:1
 msgid ""
@@ -239,7 +244,7 @@ msgstr "同期"
 
 #: chrome-gnome-shell-key-synchronization_cancel:1
 msgid "Do not enable synchronization."
-msgstr ""
+msgstr "同期を有効化しない"
 
 #. $CAUSE$ is placeholder for error that caused synchronization failure.
 #.
@@ -252,15 +257,15 @@ msgstr "拡張機能の同期に失敗しました: $CAUSE$"
 
 #: chrome-gnome-shell-key-synchronization_storage_exists:1
 msgid "Your remote synchronization storage already contains extensions list."
-msgstr ""
+msgstr "リモート同期ストレージはすでに拡張機能のリストを持っています。"
 
 #: chrome-gnome-shell-key-synchronization_use_local:1
 msgid "Use local extensions list, overwrite remote."
-msgstr ""
+msgstr "ローカルの拡張機能リストを使い、リモートのものを上書きする。"
 
 #: chrome-gnome-shell-key-synchronization_use_remote:1
 msgid "Use remote extensions list, overwrite local."
-msgstr ""
+msgstr "リモートの拡張機能リストを使い、ローカルのものを上書きする。"
 
 #. This is content of 'About translation' tab in Options dialog. Thank you for
 #. translation and feel free to add yourself here. HTML markup enabled for
@@ -268,6 +273,7 @@ msgstr ""
 #: chrome-gnome-shell-key-translation_credits:1
 msgid "translation_credits"
 msgstr ""
+"Yuki Okushi <huyuumi.dev@gmail.com>"
 
 #. Link name for translation credits tab in options dialog.
 #: chrome-gnome-shell-key-translation_credits_title:1
@@ -301,6 +307,11 @@ msgid ""
 "GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
 "instructions."
 msgstr ""
+"ネイティブホストコネクタは次の API をサポートしていません: $$1。"
+"おそらくネイティブホストコネクタを更新するか、不足している API のプラグインをインストール"
+"する必要があります。手順については、<a href='https://wiki.gnome.org/Projects/"
+"GnomeShellIntegrationForChrome/Installation'>ドキュメント</a>を"
+"参照してください。"
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
