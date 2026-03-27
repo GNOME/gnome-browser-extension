@@ -2,20 +2,23 @@
 # DO NOT EDIT!
 # This file is auto generated with chrome-messages2po tool.
 # Мирослав Николић <miroslavnikolic@rocketmail.com>, 2016—2021.
+# Марко Костић <marko.m.kostic@gmail.com>, 2026.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2020-05-04 19:33+0000\n"
-"PO-Revision-Date: 2021-01-20 10:32+0200\n"
-"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"POT-Creation-Date: 2025-09-06 19:37+0000\n"
+"PO-Revision-Date: 2026-03-27 13:09+0100\n"
+"Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: српски <gnome-sr@googlegroups.org>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
-"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 3.9\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -66,11 +69,6 @@ msgstr "Усклађено"
 msgid "GNOME Shell integration"
 msgstr "Интеграција Гномове шкољке"
 
-#. This is a part of phrase 'Update check period: xx hours'
-#: chrome-gnome-shell-key-hours:1
-msgid "hours"
-msgstr "сати"
-
 #. Used as extension description in Chrome Store
 #: chrome-gnome-shell-key-manifest_description:1
 msgid ""
@@ -109,16 +107,19 @@ msgstr ""
 "Не могу да нађем подешавања или издање Гномове шкољке. Проверите да ли је "
 "инсталирана и покренута."
 
+#. $url$ is a placeholder for URL
+#.
+#. String placeholders:
+#. url
+#.
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
-"instructions about installing connector."
+"is not detected. Refer <a href='$url$'>documentation</a> for instructions "
+"about installing connector."
 msgstr ""
 "Иако проширење интеграције Гномове шкољке ради, изворни конектор домаћина "
-"није откривен. Погледајте у <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>документацији</a> упутства о "
+"није откривен. Погледајте у <a href='$url$'>документацију</a> за упутства о "
 "инсталирању конектора."
 
 #. Means 'Web extension does not received answer from native messaging host
@@ -132,28 +133,10 @@ msgstr "Нема одговора домаћина"
 msgid "Open GNOME Shell extensions website"
 msgstr "Отвара веб сајт проширења Гномове шкољке"
 
-#. Option name. Allow to set interval between GNOME Shell extensions update
-#. checks.
-#: chrome-gnome-shell-key-options_check_period:1
-msgid "Update check period"
-msgstr "Период провере освежавања"
-
-#. This is a start of phrase (followed by date/time) of last GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_last_check:1
-msgid "Last check"
-msgstr "Последња провера"
-
 #. Link name for options tab.
 #: chrome-gnome-shell-key-options_link:1
 msgid "Options"
 msgstr "Опције"
-
-#. This is a start of phrase (followed by date/time) of next GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_next_check:1
-msgid "Next check"
-msgstr "Следећа провера"
 
 #. Means 'Options were saved successfully after user clicked Save button'
 #: chrome-gnome-shell-key-options_saved:1
@@ -191,32 +174,6 @@ msgstr ""
 #: chrome-gnome-shell-key-options_title:1
 msgid "$GS_CHROME$ options"
 msgstr "$GS_CHROME$ опције"
-
-#. Option name. Allow enable/disable update check for GNOME Shell extensions.
-#: chrome-gnome-shell-key-options_update_check:1
-msgid "Check for GNOME Shell extensions update"
-msgstr "Провери за освежењима проширења Гномове шкољке"
-
-#. Option name.
-#: chrome-gnome-shell-key-options_update_check_enabled:1
-msgid "Check update of enabled GNOME Shell extensions only"
-msgstr "Провери само освежење укључених проширења Гномове шкољке"
-
-#: chrome-gnome-shell-key-options_update_check_enabled_notice:1
-msgid ""
-"Your native host connector does not support updates check for enabled GNOME "
-"Shell extensions only. Consider update."
-msgstr ""
-"Ваш изворни конектор домаћина не подржава проверу освежења само за укључена "
-"проширења Гномове шкољке. Размислите о освежењу система."
-
-#: chrome-gnome-shell-key-options_update_check_notice:1
-msgid ""
-"Your native host connector does not support check for GNOME Shell extensions "
-"updates. Probably python-requests package is missing."
-msgstr ""
-"Ваш изворни конектор домаћина не подржава проверу за освежењима проширења "
-"Гномове шкољке. Вероватно недостаје пакет „python-requests“."
 
 #. Use light icon that is looked better with dark themes.
 #: chrome-gnome-shell-key-options_use_light_icon:1
@@ -270,7 +227,10 @@ msgstr "Користи удаљени списак проширења, преп�
 #. this string. New line character is treated as line break (<br />)
 #: chrome-gnome-shell-key-translation_credits:1
 msgid "translation_credits"
-msgstr "Мирослав Николић <miroslavnikolic@rocketmail.com>"
+msgstr ""
+"Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"Марко Костић <marko.m.kostic@gmail.com>\n"
+"Превод на српски језик https://гном.срб"
 
 #. Link name for translation credits tab in options dialog.
 #: chrome-gnome-shell-key-translation_credits_title:1
@@ -282,32 +242,17 @@ msgstr "О преводу"
 msgid "unknown error"
 msgstr "непозната грешка"
 
-#: chrome-gnome-shell-key-update_available:1
-msgid "An update for GNOME Shell extensions available"
-msgstr "Доступно је освежење за проширења Гномове шкољке"
-
-#. $CAUSE$ is placeholder for error that caused update failure.
-#.
-#. String placeholders:
-#. cause
-#.
-#: chrome-gnome-shell-key-update_check_failed:1
-msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
-msgstr "Нисам успео да проверим освежења проширења Гномове шкољке: $CAUSE$"
-
 #. $$1 is a placeholder for a list of missing APIs
 #: chrome-gnome-shell-key-warning_apis_missing:1
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
-"instructions."
+"Refer <a href='$$2'>documentation</a> for instructions."
 msgstr ""
 "Ваш изворни конектор домаћина не подржава следеће АПИ-је: $$1. Вероватно "
 "треба да надоградите изворни конектор домаћина или да инсталирате прикључке "
-"за недостајуће АПИ-је. Испратите <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>документацију</a> за упутствима."
+"за недостајуће АПИ-је. Испратите <a href='$$2'>документацију</a> са "
+"упутствима."
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -315,35 +260,62 @@ msgstr "Да"
 
 #. Chrome store description
 #: chrome-gnome-shell-store-description:1
-#| msgid ""
-#| "You MUST install native connector for this extension to work.\n"
-#| "\n"
-#| "For Arch Linux there is a PKGBUILD available in the AUR: https://aur."
-#| "archlinux.org/packages/chrome-gnome-shell-git\n"
-#| "\n"
-#| "For Debian, Fedora, Gentoo and Ubuntu you can install package named "
-#| "\"chrome-gnome-shell\".\n"
-#| "\n"
-#| "You also can install connector manually. See https://wiki.gnome.org/"
-#| "Projects/GnomeShellIntegrationForChrome/Installation for install "
-#| "instructions.\n"
 msgid ""
 "You MUST install native connector for this extension to work.\n"
 "\n"
 "For Arch Linux, Debian, Fedora, Gentoo and Ubuntu you can install package "
 "named \"chrome-gnome-shell\".\n"
 "\n"
-"You also can install connector manually. See https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation for install instructions.\n"
+"You also can install connector manually. See https://"
+"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+"guide.html for install instructions.\n"
 msgstr ""
 "МОРАТЕ инсталирати изворни конектор да би ово проширење радило.\n"
 "\n"
 "За Арч Линукс, Дебијан, Федору, Џенту и Убунту можете инсталирати пакет "
 "„chrome-gnome-shell“.\n"
 "\n"
-"Можете такође и ручно да инсталирате конектор. Погледајте "
-"„https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/Installation“"
-" за упутствo о инсталацији.\n"
+"Можете такође и ручно да инсталирате конектор. Погледајте „https://"
+"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+"guide.html“ за упутствo о инсталацији.\n"
+
+#~ msgid "hours"
+#~ msgstr "сати"
+
+#~ msgid "Update check period"
+#~ msgstr "Период провере освежавања"
+
+#~ msgid "Last check"
+#~ msgstr "Последња провера"
+
+#~ msgid "Next check"
+#~ msgstr "Следећа провера"
+
+#~ msgid "Check for GNOME Shell extensions update"
+#~ msgstr "Провери за освежењима проширења Гномове шкољке"
+
+#~ msgid "Check update of enabled GNOME Shell extensions only"
+#~ msgstr "Провери само освежење укључених проширења Гномове шкољке"
+
+#~ msgid ""
+#~ "Your native host connector does not support updates check for enabled "
+#~ "GNOME Shell extensions only. Consider update."
+#~ msgstr ""
+#~ "Ваш изворни конектор домаћина не подржава проверу освежења само за "
+#~ "укључена проширења Гномове шкољке. Размислите о освежењу система."
+
+#~ msgid ""
+#~ "Your native host connector does not support check for GNOME Shell "
+#~ "extensions updates. Probably python-requests package is missing."
+#~ msgstr ""
+#~ "Ваш изворни конектор домаћина не подржава проверу за освежењима проширења "
+#~ "Гномове шкољке. Вероватно недостаје пакет „python-requests“."
+
+#~ msgid "An update for GNOME Shell extensions available"
+#~ msgstr "Доступно је освежење за проширења Гномове шкољке"
+
+#~ msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
+#~ msgstr "Нисам успео да проверим освежења проширења Гномове шкољке: $CAUSE$"
 
 #~ msgid ""
 #~ "A network error has occurred. Please check your Internet connection and/"
