@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the chrome-gnome-shell package.
 # Yi-Jyun Pan <pan93412@gmail.com>, 2018.
 #
+# SPDX-FileCopyrightText: 2026 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: chrome-gnome-shell master\n"
 "Report-Msgid-Bugs-To: ykonotopov@gnome.org\n"
-"POT-Creation-Date: 2020-05-04 19:33+0000\n"
-"PO-Revision-Date: 2020-05-25 01:14+0800\n"
-"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
-"Language-Team: Chinese (Taiwan) <chinese-l10n@googlegroups.com>\n"
+"POT-Creation-Date: 2025-09-06 19:37+0000\n"
+"PO-Revision-Date: 2026-10-11 20:56+0800\n"
+"Last-Translator: Cheng-Chia Tseng <zerngjia@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
 
 #: chrome-gnome-shell-key-close:1
 msgid "Close"
@@ -66,11 +68,6 @@ msgstr "已同步"
 msgid "GNOME Shell integration"
 msgstr "GNOME Shell 整合"
 
-#. This is a part of phrase 'Update check period: xx hours'
-#: chrome-gnome-shell-key-hours:1
-msgid "hours"
-msgstr "小時"
-
 #. Used as extension description in Chrome Store
 #: chrome-gnome-shell-key-manifest_description:1
 msgid ""
@@ -107,16 +104,19 @@ msgid ""
 "and running."
 msgstr "無法取得 GNOME Shell 的設定或版本。確保其已經安裝且為執行狀態。"
 
+#. $url$ is a placeholder for URL
+#.
+#. String placeholders:
+#. url
+#.
 #: chrome-gnome-shell-key-no_host_connector:1
 msgid ""
 "Although GNOME Shell integration extension is running, native host connector "
-"is not detected. Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
-"instructions about installing connector."
+"is not detected. Refer <a href='$url$'>documentation</a> for instructions "
+"about installing connector."
 msgstr ""
 "雖然 GNOME Shell 整合附加元件為執行狀態，但未偵測到原生主機介面。請參考<a "
-"href='https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome/"
-"Installation'>文件</a>取得安裝介面的指引說明。"
+"href='$url$'>文件</a>取得安裝介面的指引說明。"
 
 #. Means 'Web extension does not received answer from native messaging host
 #. application.'
@@ -129,28 +129,10 @@ msgstr "無主機回應"
 msgid "Open GNOME Shell extensions website"
 msgstr "開啟 GNOME Shell 附加元件網頁"
 
-#. Option name. Allow to set interval between GNOME Shell extensions update
-#. checks.
-#: chrome-gnome-shell-key-options_check_period:1
-msgid "Update check period"
-msgstr "檢查更新週期"
-
-#. This is a start of phrase (followed by date/time) of last GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_last_check:1
-msgid "Last check"
-msgstr "上次檢查"
-
 #. Link name for options tab.
 #: chrome-gnome-shell-key-options_link:1
 msgid "Options"
 msgstr "選項"
-
-#. This is a start of phrase (followed by date/time) of next GNOME Shell
-#. extensions update check.
-#: chrome-gnome-shell-key-options_next_check:1
-msgid "Next check"
-msgstr "下次檢查"
 
 #. Means 'Options were saved successfully after user clicked Save button'
 #: chrome-gnome-shell-key-options_saved:1
@@ -186,32 +168,6 @@ msgstr "若啟用則同步 GNOME Shell 附加元件列表到 Google 帳號。"
 #: chrome-gnome-shell-key-options_title:1
 msgid "$GS_CHROME$ options"
 msgstr "$GS_CHROME$ 選項"
-
-#. Option name. Allow enable/disable update check for GNOME Shell extensions.
-#: chrome-gnome-shell-key-options_update_check:1
-msgid "Check for GNOME Shell extensions update"
-msgstr "檢查 GNOME Shell 附加元件的更新"
-
-#. Option name.
-#: chrome-gnome-shell-key-options_update_check_enabled:1
-msgid "Check update of enabled GNOME Shell extensions only"
-msgstr "只檢查啟用的 GNOME Shell 附加元件更新"
-
-#: chrome-gnome-shell-key-options_update_check_enabled_notice:1
-msgid ""
-"Your native host connector does not support updates check for enabled GNOME "
-"Shell extensions only. Consider update."
-msgstr ""
-"您的原生主機介面不支援「只檢查啟用的 GNOME Shell 附加元件更新」功能。請考慮更"
-"新。"
-
-#: chrome-gnome-shell-key-options_update_check_notice:1
-msgid ""
-"Your native host connector does not support check for GNOME Shell extensions "
-"updates. Probably python-requests package is missing."
-msgstr ""
-"您的原生主機介面不支援檢查 GNOME Shell 附加元件的更新。可能缺少 python-"
-"requests 軟體包。"
 
 #. Use light icon that is looked better with dark themes.
 #: chrome-gnome-shell-key-options_use_light_icon:1
@@ -277,31 +233,15 @@ msgstr "關於翻譯"
 msgid "unknown error"
 msgstr "未知錯誤"
 
-#: chrome-gnome-shell-key-update_available:1
-msgid "An update for GNOME Shell extensions available"
-msgstr "有可用的 GNOME Shell 附加元件更新"
-
-#. $CAUSE$ is placeholder for error that caused update failure.
-#.
-#. String placeholders:
-#. cause
-#.
-#: chrome-gnome-shell-key-update_check_failed:1
-msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
-msgstr "嘗試檢查 GNOME Shell 附加元件更新時出錯：$CAUSE$"
-
 #. $$1 is a placeholder for a list of missing APIs
 #: chrome-gnome-shell-key-warning_apis_missing:1
 msgid ""
 "Your native host connector do not support following APIs: $$1. Probably you "
 "should upgrade native host connector or install plugins for missing APIs. "
-"Refer <a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>documentation</a> for "
-"instructions."
+"Refer <a href='$$2'>documentation</a> for instructions."
 msgstr ""
 "您的原生主機介面不支援以下 API：$$1。可能你需要升級原生主機介面、或安裝遺失 "
-"API 的附加元件。參考<a href='https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation'>文件</a>取得指引。"
+"API 的外掛插件。參考<a href='$$2'>文件</a>取得指引。"
 
 #: chrome-gnome-shell-key-yes:1
 msgid "Yes"
@@ -315,13 +255,52 @@ msgid ""
 "For Arch Linux, Debian, Fedora, Gentoo and Ubuntu you can install package "
 "named \"chrome-gnome-shell\".\n"
 "\n"
-"You also can install connector manually. See https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation for install instructions.\n"
+"You also can install connector manually. See https://"
+"gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-"
+"guide.html for install instructions.\n"
 msgstr ""
 "您必須安裝此附加元件的原生介面才能運作。\n"
 "\n"
 "Arch Linux、Debian、Fedora、Gentoo 和 Ubuntu 能直接安裝名為「chrome-gnome-"
 "shell」的軟體包。\n"
 "\n"
-"你也可以手動安裝連接器。請參閱 https://wiki.gnome.org/Projects/"
-"GnomeShellIntegrationForChrome/Installation 的安裝指引。\n"
+"你也可以手動安裝連接器。請參閱 https://gnome.pages.gitlab.gnome.org/gnome-"
+"browser-integration/pages/installation-guide.html 的安裝指引。\n"
+
+#~ msgid "hours"
+#~ msgstr "小時"
+
+#~ msgid "Update check period"
+#~ msgstr "檢查更新週期"
+
+#~ msgid "Last check"
+#~ msgstr "上次檢查"
+
+#~ msgid "Next check"
+#~ msgstr "下次檢查"
+
+#~ msgid "Check for GNOME Shell extensions update"
+#~ msgstr "檢查 GNOME Shell 附加元件的更新"
+
+#~ msgid "Check update of enabled GNOME Shell extensions only"
+#~ msgstr "只檢查啟用的 GNOME Shell 附加元件更新"
+
+#~ msgid ""
+#~ "Your native host connector does not support updates check for enabled "
+#~ "GNOME Shell extensions only. Consider update."
+#~ msgstr ""
+#~ "您的原生主機介面不支援「只檢查啟用的 GNOME Shell 附加元件更新」功能。請考"
+#~ "慮更新。"
+
+#~ msgid ""
+#~ "Your native host connector does not support check for GNOME Shell "
+#~ "extensions updates. Probably python-requests package is missing."
+#~ msgstr ""
+#~ "您的原生主機介面不支援檢查 GNOME Shell 附加元件的更新。可能缺少 python-"
+#~ "requests 軟體包。"
+
+#~ msgid "An update for GNOME Shell extensions available"
+#~ msgstr "有可用的 GNOME Shell 附加元件更新"
+
+#~ msgid "Failed to check GNOME Shell extensions updates: $CAUSE$"
+#~ msgstr "嘗試檢查 GNOME Shell 附加元件更新時出錯：$CAUSE$"
